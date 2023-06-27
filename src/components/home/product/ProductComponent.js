@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProductComponent: React.FC = () => (
+const ProductComponent = () => (
   <div>Product</div>
 );
 export default ProductComponent;

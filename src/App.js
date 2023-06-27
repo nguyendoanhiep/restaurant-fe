@@ -1,13 +1,15 @@
 import HeaderComponent from './components/header/HeaderComponent'
-import HomeComponent from "./components/home/HomeComponent";
 import React from "react";
 import FooterComponent from "./components/footer/FooterComponent";
-
-const App: React.FC = () => (
-  <>
-      <HeaderComponent/>
-      <HomeComponent/>
-      <FooterComponent/>
-  </>
-);
+import Router from './components/router/Router';
+import './App.css'
+const App = () => {
+  return (
+    <div className="app-container">
+      <HeaderComponent />
+      <Router />
+      <FooterComponent />
+    </div>
+  )
+};
 export default App;

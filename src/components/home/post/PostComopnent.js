@@ -1,6 +1,14 @@
 import React from "react";
 
-const PostComponent: React.FC = () => (
-    <div>Post</div>
-);
+const PostComponent = () => {
+  return (
+    <div>
+      <div>Post</div>
+      <div>Post</div>
+      <div>Post</div>
+      <div>Post</div>
+    </div>
+
+  )
+};
 export default PostComponent;
