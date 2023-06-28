@@ -1,9 +1,10 @@
 import React from 'react';
-import {Layout, Menu, Input} from 'antd';
+import {Layout, Menu, Input, Image} from 'antd';
 import {NavLink, useNavigate} from 'react-router-dom';
 import {useEffect, useState} from "react";
 import {useSelector, useDispatch} from 'react-redux';
 import {logout} from '../../redux/slice/LoginSlince';
+const { Search } = Input;
 
 
 const HeaderComponent = () => {
@@ -20,20 +21,14 @@ const HeaderComponent = () => {
     };
 
     const items = [
-        {key: '1', label: 'Home', style: {width: '80px', margin: '0 20px', fontSize: '17px'}, to: '/'},
-        {key: '2', label: 'About', style: {width: '80px', margin: '0 20px', fontSize: '17px'}, to: '/about'},
-        {key: '3', label: 'Register', style: {width: '80px', margin: '0 20px', fontSize: '17px'}, to: '/register'},
-        {key: '4', label: 'Login', style: {width: '80px', margin: '0 20px', fontSize: '17px'}, to: '/login'},
+        {key: '1', label: 'Home', to: '/'},
+        {key: '2', label: 'About', to: '/about'},
+        {key: '3', label: 'Register', to: '/register'},
+        {key: '4', label: 'Login', to: '/login'},
     ];
     const authItems = [
-        {key: '3', label: 'Profile', style: {width: '80px', margin: '0 20px', fontSize: '17px'}, to: '/profile'},
-        {
-            key: '4',
-            label: 'Logout',
-            style: {width: '80px', margin: '0 20px', fontSize: '17px'},
-            to: '/',
-            onClick: handleLogout
-        },
+        {key: '3', label: 'Profile', to: '/profile'},
+        {key: '4', label: 'Logout', to: '/', onClick: handleLogout},
     ];
 
     useEffect(() => {
@@ -44,31 +39,37 @@ const HeaderComponent = () => {
             setMergedItems([...items]);
         }
     }, [isLoggedIn]);
-    const onSeacrch = () => {
+    const onSearch = () => {
 
     }
-
     return (
-        <Layout style={{background: '#fff', padding: '0 16px'}}>
-            <div style={{display: 'grid', gridTemplateColumns: '1fr auto', alignItems: 'center', height: '60px'}}>
-                <div style={{justifySelf: 'end'}}>
-                    <Input placeholder="Search" onChange={onSeacrch} style={{width: '500px', height: '40px'}}/>
-                </div>
-                <div style={{justifySelf: 'end', marginRight: '20px', marginLeft: '20px'}}>
-                    <Menu theme="light" mode="horizontal">
-                        {mergedItems.map((item) => (
-                            <Menu.Item key={item.key} style={item.style}>
-                                <NavLink to={item.to} onClick={item.onClick}>
-                                    {item.label}
-                                </NavLink>
-                            </Menu.Item>
-                        ))}
-                    </Menu>
-                </div>
+        <Layout className='custom-layout'>
+            <div style={{display: 'flex', justifyContent: 'center', marginBottom: '10px', width: '100%'}}>
+                <Image
+                    style={{borderRadius: '10%'}}
+                    width={120}
+                    height={60}
+                    src={'https://toiyeumeo.com/wp-content/uploads/2021/03/hinh-anh-meo-xinh-ngo-nghinh.jpg'}
+                />
+            </div>
+            <div style={{marginBottom: '10px', width: '100%' , height:'40px'}}>
+                <Search placeholder="Search" onSearch={onSearch} style={{width: '100%'}}/>
+            </div>
+            <div style={{marginBottom: '10px', width: '100%'}}>
+                <Menu theme="light" mode="horizontal"
+                      style={{fontSize: '16px', justifyContent: 'center', width: '100%'}}>
+                    {mergedItems.map((item) => (
+                        <Menu.Item key={item.key} style={{width: '24%', display: 'flex', justifyContent: 'center', color : 'red'}}>
+                            <NavLink to={item.to} onClick={item.onClick}>
+                                {item.label}
+                            </NavLink>
+                        </Menu.Item>
+                    ))}
+                </Menu>
             </div>
         </Layout>
-    )
-};
+    );
 
 
+}
 export default HeaderComponent;

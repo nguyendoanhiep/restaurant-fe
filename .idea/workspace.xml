@@ -5,19 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="758a96ff-beac-4a4f-a842-6f9a881c39f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/register/RegisterComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/slice/UserSlince.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/thunk/UserThunk.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/Footer.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/LoginComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/router/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/router/Router.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/redux/Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/Store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slice/counterSlice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/slice/LoginSlince.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slice/LoginSlince.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -82,7 +91,7 @@
       <workItem from="1687851172682" duration="174000" />
       <workItem from="1687851361819" duration="984000" />
       <workItem from="1687852476095" duration="3000" />
-      <workItem from="1687917667619" duration="1201000" />
+      <workItem from="1687917667619" duration="14832000" />
     </task>
     <servers />
   </component>

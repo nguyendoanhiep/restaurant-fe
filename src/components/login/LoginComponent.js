@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {Form, Input, Button} from 'antd';
 import {UserOutlined, LockOutlined} from '@ant-design/icons';
 import {useDispatch} from 'react-redux';
@@ -11,6 +11,21 @@ const LoginComponent = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
+    const isRegister = sessionStorage.getItem('isRegister') === 'true';
+    sessionStorage.removeItem('isRegister');
+    useEffect(() => {
+        if (isRegister) {
+            toast.success('Đăng Ký thành công!', {
+                position: toast.POSITION.TOP_RIGHT,
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+            });
+        }
+    }, [])
     const onSubmit = (values) => {
         dispatch(loginUser(values.username, values.password)).then(res => {
             if (res.code === 200) {
@@ -29,7 +44,7 @@ const LoginComponent = () => {
             name="loginForm"
             onFinish={onSubmit}
             className="login-form"
-            style={{maxWidth: '400px', margin: '0 auto', marginTop: '50px'}}
+            style={{maxWidth: '400px', margin: '0 auto'}}
         >
             <h2>Login</h2>
 
@@ -40,6 +55,7 @@ const LoginComponent = () => {
                 ]}
             >
                 <Input
+                    style={{height: '35px'}}
                     prefix={<UserOutlined className="site-form-item-icon"/>}
                     placeholder="Username"
                 />
@@ -52,13 +68,17 @@ const LoginComponent = () => {
                 ]}
             >
                 <Input.Password
+                    style={{height: '35px'}}
+
                     prefix={<LockOutlined className="site-form-item-icon"/>}
                     placeholder="Password"
                 />
             </Form.Item>
 
             <Form.Item>
-                <Button type="primary" htmlType="submit" className="login-form-button" danger>
+                <Button type="primary" htmlType="submit" className="login-form-button"
+                        style={{width: '80px', height: '40px'}}
+                        danger>
                     Log in
                 </Button>
                 <ToastContainer/>

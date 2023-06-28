@@ -5,15 +5,13 @@ const FooterComponent = () => {
     return (
         <Footer style={{
             backgroundColor: '#f5f5f5',
-            padding: '20px',
             position: 'fixed',
-            bottom: '0',
-            width: '100%',
+            bottom: 0,
+            left: 0,
+            right: 0,
             textAlign: 'center',
         }}>
-            <div style={{maxWidth: '600px',
-                margin: '0 auto',
-            }}>
+            <div>
                 <p>&copy; 2023 Your Website. All rights reserved.</p>
             </div>
         </Footer>

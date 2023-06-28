@@ -1,4 +1,18 @@
-.app-container {
-  position: relative;
-  min-height: 100vh; /* Tối thiểu chiều cao của màn hình */
+@media (max-width: 767px) {
+    .custom-layout {
+        background: #fff;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+}
+@media (min-width: 768px) {
+    .custom-layout {
+        background: #fff;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center
+    }
 }

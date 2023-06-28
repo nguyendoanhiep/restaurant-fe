@@ -5,7 +5,7 @@ import Router from './components/router/Router';
 import './App.css'
 const App = () => {
   return (
-    <div className="app-container">
+    <div style={{width:'100%'}}>
       <HeaderComponent />
       <Router />
       <FooterComponent />

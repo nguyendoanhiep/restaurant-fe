@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import thunkMiddleware from 'redux-thunk';
-import userReducer from './slice/LoginSlince';
+import loginReducer from './slice/LoginSlince';
+import userReducer from './slice/UserSlince'
 
 
 export default configureStore({
     reducer: {
-        user: userReducer,
+        login: loginReducer,
+        user: userReducer
     },
     middleware: [thunkMiddleware],
 

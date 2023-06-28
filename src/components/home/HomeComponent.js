@@ -22,11 +22,10 @@ const HomeComponent = () => {
         }
     }, [])
     return (
-        <div style={{display: 'flex', marginLeft: '200px', marginRight: '200px', minHeight: '80vh'}}>
+        <div style={{ marginLeft: '20%', marginRight: '20%'}}>
             <ProductComponent/>
             <PostComponent/>
             <ToastContainer/>
-
         </div>
 
     )
