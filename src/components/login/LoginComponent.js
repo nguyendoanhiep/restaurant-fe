@@ -29,7 +29,7 @@ const LoginComponent = () => {
             name="loginForm"
             onFinish={onSubmit}
             className="login-form"
-            style={{ maxWidth: '400px', margin: '0 auto', marginTop: '100px' }}
+            style={{ maxWidth: '400px', margin: '0 auto', marginTop: '50px' }}
         >
             <h2>Login</h2>
 

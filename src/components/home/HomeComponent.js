@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import ProductComponent from "./product/ProductComponent";
 import PostComponent from "./post/PostComopnent";
-import './Home.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -22,10 +21,9 @@ const HomeComponent = () => {
             });
 
         }
-
     }, [])
     return (
-        <div className="container">
+        <div style={{ display: 'flex',  marginLeft: '200px', marginRight: '200px', minHeight: '80vh' }}>
             <ProductComponent />
             <PostComponent />
             <ToastContainer />
