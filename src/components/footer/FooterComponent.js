@@ -1,13 +1,22 @@
 import React from "react";
-import { Footer } from "antd/es/layout/layout";
-import './Footer.css'
+import {Footer} from "antd/es/layout/layout";
+
 const FooterComponent = () => {
     return (
-        <Footer  className="footer-container">
-        <div className="footer-content">
-          <p>&copy; 2023 Your Website. All rights reserved.</p>
-        </div>
-      </Footer >
+        <Footer style={{
+            backgroundColor: '#f5f5f5',
+            padding: '20px',
+            position: 'fixed',
+            bottom: '0',
+            width: '100%',
+            textAlign: 'center',
+        }}>
+            <div style={{maxWidth: '600px',
+                margin: '0 auto',
+            }}>
+                <p>&copy; 2023 Your Website. All rights reserved.</p>
+            </div>
+        </Footer>
     )
 };
 export default FooterComponent;

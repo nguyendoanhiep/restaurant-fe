@@ -1,8 +1,8 @@
 import React from "react";
-import { useEffect } from "react";
+import {useEffect} from "react";
 import ProductComponent from "./product/ProductComponent";
 import PostComponent from "./post/PostComopnent";
-import { ToastContainer, toast } from 'react-toastify';
+import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const HomeComponent = () => {
@@ -19,14 +19,13 @@ const HomeComponent = () => {
                 draggable: true,
                 progress: undefined,
             });
-
         }
     }, [])
     return (
-        <div style={{ display: 'flex',  marginLeft: '200px', marginRight: '200px', minHeight: '80vh' }}>
-            <ProductComponent />
-            <PostComponent />
-            <ToastContainer />
+        <div style={{display: 'flex', marginLeft: '200px', marginRight: '200px', minHeight: '80vh'}}>
+            <ProductComponent/>
+            <PostComponent/>
+            <ToastContainer/>
 
         </div>
 
