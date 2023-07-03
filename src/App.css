@@ -3,6 +3,7 @@
         background: #fff;
         margin-bottom: 40px;
     }
+
     .custom-layout {
         display: flex;
         flex-direction: row;
@@ -11,13 +12,15 @@
         z-index: 1
 
     }
-    .menu-layout{
-        position: absolute  ;
-        width:70% ;
-        margin-top:40px ;
-        color : red
+
+    .menu-layout {
+        position: absolute;
+        width: 70%;
+        margin-top: 40px;
+        color: red
     }
-    .header-search{
+
+    .header-search {
         margin-left: auto;
         margin-right: auto;
         display: block;
@@ -25,10 +28,16 @@
         margin-top: 10px;
         width: 90%;
     }
+
     .my-toast {
         margin-left: 150px;
     }
+    .custom-body {
+        margin-left: 5%;
+        margin-right: 5%
+    }
 }
+
 @media (min-width: 768px) {
     .custom-header {
         background: #fff;
@@ -36,6 +45,7 @@
         margin-left: 15%;
         margin-right: 15%;
     }
+
     .custom-layout {
         display: flex;
         flex-direction: row;
@@ -44,19 +54,26 @@
         z-index: 1;
 
     }
-    .menu-layout{
-        position: absolute  ;
-        width:30% ;
-        margin-top:40px ;
-        color : red
+
+    .menu-layout {
+        position: absolute;
+        width: 30%;
+        margin-top: 40px;
+        color: red
     }
-    .header-search{
+
+    .header-search {
         margin-left: auto;
         margin-right: auto;
         display: block;
         justify-content: center;
         margin-top: 10px;
         width: 50%;
+    }
+
+    .custom-body {
+        margin-left: 20%;
+        margin-right: 20%
     }
 
 }

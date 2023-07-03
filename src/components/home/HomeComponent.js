@@ -23,7 +23,7 @@ const HomeComponent = () => {
         }
     }, [])
     return (
-        <div style={{ marginLeft: '20%', marginRight: '20%'}}>
+        <div className="custom-body">
             <ProductComponent/>
             <PostComponent/>
             <ToastContainer/>
