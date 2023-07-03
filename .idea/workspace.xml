@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="758a96ff-beac-4a4f-a842-6f9a881c39f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/register/RegisterComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/slice/UserSlince.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/thunk/UserThunk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/My-tom-cat.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/LoginComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/router/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/router/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/Store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/Store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/slice/LoginSlince.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/slice/LoginSlince.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register/RegisterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register/RegisterComponent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,19 +38,23 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/HiepND/IdeaProjects/tom-cat-house-fe",
+    "last_opened_file_path": "C:/Users/HiepND/IdeaProjects/tom-cat-house-fe/src/env/img",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HiepND\IdeaProjects\tom-cat-house-fe\src\env\img" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -91,7 +92,9 @@
       <workItem from="1687851172682" duration="174000" />
       <workItem from="1687851361819" duration="984000" />
       <workItem from="1687852476095" duration="3000" />
-      <workItem from="1687917667619" duration="14832000" />
+      <workItem from="1687917667619" duration="29101000" />
+      <workItem from="1688008544506" duration="168000" />
+      <workItem from="1688347364766" duration="21662000" />
     </task>
     <servers />
   </component>

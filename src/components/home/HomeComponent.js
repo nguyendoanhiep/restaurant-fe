@@ -18,6 +18,7 @@ const HomeComponent = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
+                className: 'my-toast',
             });
         }
     }, [])

@@ -23,6 +23,7 @@ const LoginComponent = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
+                className: 'my-toast',
             });
         }
     }, [])
@@ -33,7 +34,16 @@ const LoginComponent = () => {
                 navigate('/')
             } else {
                 // Đăng nhập không thành công
-                toast.error('Đăng nhập không thành công!');
+                toast.error('Đăng nhập không thành công!',{
+                    position: toast.POSITION.TOP_RIGHT,
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    className: 'my-toast'
+                });
             }
         });
 
@@ -44,7 +54,7 @@ const LoginComponent = () => {
             name="loginForm"
             onFinish={onSubmit}
             className="login-form"
-            style={{maxWidth: '400px', margin: '0 auto'}}
+            style={{maxWidth: '400px', margin: '0 auto' , zIndex: '2' }}
         >
             <h2>Login</h2>
 

@@ -20,7 +20,9 @@ const RegisterComponent = () => {
                 navigate('/login')
             } else {
                 // Đăng nhập không thành công
-                toast.error('Đăng Ký không thành công!');
+                toast.error('Đăng Ký không thành công!', {
+                    className: 'my-toast',
+                });
             }
         });
     };
@@ -29,7 +31,7 @@ const RegisterComponent = () => {
             name="registerForm"
             onFinish={onSubmit}
             className="register-form"
-            style={{maxWidth: '400px', margin: '0 auto'}}
+            style={{maxWidth: '400px', margin: '0 auto' , zIndex: '2' }}
         >
             <h2>Register</h2>
 
