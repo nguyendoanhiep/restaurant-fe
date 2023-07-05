@@ -5,7 +5,6 @@ const FooterComponent = () => {
     return (
         <Footer style={{
             backgroundColor: '#f5f5f5',
-            position: 'fixed',
             bottom: 0,
             left: 0,
             right: 0,

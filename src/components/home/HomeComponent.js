@@ -4,6 +4,7 @@ import ProductComponent from "./product/ProductComponent";
 import PostComponent from "./post/PostComopnent";
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SearchComponent from "../search/SearchComponent";
 
 const HomeComponent = () => {
     const isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true';
@@ -23,8 +24,11 @@ const HomeComponent = () => {
         }
     }, [])
     return (
-        <div className="custom-body">
-            <ProductComponent/>
+        <div >
+            <div className="custom-body-app">
+                <SearchComponent/>
+                <ProductComponent/>
+            </div>
             <PostComponent/>
             <ToastContainer/>
         </div>
