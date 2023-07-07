@@ -50,51 +50,48 @@ const LoginComponent = () => {
     };
 
     return (
-        <Form
-            name="loginForm"
-            onFinish={onSubmit}
-            className="login-form"
-            style={{maxWidth: '400px', margin: '0 auto' , zIndex: '2' }}
-        >
-            <h2>Login</h2>
+           <Form
+               name="loginForm"
+               onFinish={onSubmit}
+               className="form"
+           >
+               <h2>Login</h2>
 
-            <Form.Item
-                name="username"
-                rules={[
-                    {required: true, message: 'Please input your username!'},
-                ]}
-            >
-                <Input
-                    style={{height: '35px'}}
-                    prefix={<UserOutlined className="site-form-item-icon"/>}
-                    placeholder="Username"
-                />
-            </Form.Item>
+               <Form.Item
+                   name="username"
+                   rules={[
+                       {required: true, message: 'Please input your username!'},
+                   ]}
+               >
+                   <Input
+                       style={{height: '35px'}}
+                       prefix={<UserOutlined className="site-form-item-icon"/>}
+                       placeholder="Username"
+                   />
+               </Form.Item>
 
-            <Form.Item
-                name="password"
-                rules={[
-                    {required: true, message: 'Please input your password!'},
-                ]}
-            >
-                <Input.Password
-                    style={{height: '35px'}}
+               <Form.Item
+                   name="password"
+                   rules={[
+                       {required: true, message: 'Please input your password!'},
+                   ]}
+               >
+                   <Input.Password
+                       style={{height: '35px'}}
 
-                    prefix={<LockOutlined className="site-form-item-icon"/>}
-                    placeholder="Password"
-                />
-            </Form.Item>
+                       prefix={<LockOutlined className="site-form-item-icon"/>}
+                       placeholder="Password"
+                   />
+               </Form.Item>
 
-            <Form.Item>
-                <Button type="primary" htmlType="submit" className="login-form-button"
-                        style={{width: '80px', height: '40px'}}
-                        danger>
-                    Log in
-                </Button>
-                <ToastContainer/>
-
-            </Form.Item>
-        </Form>
+               <Form.Item>
+                   <Button type="primary" htmlType="submit" className="login-form-button"
+                           style={{width: '80px', height: '40px'}}
+                           danger>
+                       Log in
+                   </Button>
+               </Form.Item>
+           </Form>
     )
 };
 

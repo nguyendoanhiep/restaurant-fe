@@ -67,16 +67,14 @@ const HeaderComponent = () => {
                 <Button onClick={toggleMenu}>
                     {menu ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>}
                 </Button>
-                {menu ?
-                    <Menu
-                        onClick={onHandleMenu}
-                        mode="inline"
-                        theme="light"
-                        inlineCollapsed={!menu}
-                        items={items}
-                        className="menu-layout"
-                    />
-                    : <></>}
+                {menu && <Menu
+                            onClick={onHandleMenu}
+                            mode="inline"
+                            theme="light"
+                            inlineCollapsed={!menu}
+                            items={items}
+                            className="menu-layout"/>
+                }
             </div>
             <div style={{display: 'flex', justifyContent: 'center', width: '60%'}}>
                 <NavLink to="/">

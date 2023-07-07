@@ -6,6 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="758a96ff-beac-4a4f-a842-6f9a881c39f1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/SearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/SearchComponent.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +35,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/HiepND/IdeaProjects/tom-cat-house-fe/src/env/img",
+    "last_opened_file_path": "C:/Users/HiepND/IdeaProjects/tom-cat-house-fe",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -89,6 +93,8 @@
       <workItem from="1687917667619" duration="29101000" />
       <workItem from="1688008544506" duration="168000" />
       <workItem from="1688347364766" duration="26345000" />
+      <workItem from="1688605511575" duration="8136000" />
+      <workItem from="1688622510502" duration="2497000" />
     </task>
     <servers />
   </component>

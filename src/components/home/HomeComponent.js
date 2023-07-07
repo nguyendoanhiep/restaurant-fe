@@ -24,14 +24,9 @@ const HomeComponent = () => {
         }
     }, [])
     return (
-        <div >
-            <div className="custom-body-app">
-                <SearchComponent/>
-                <ProductComponent/>
-            </div>
-            <PostComponent/>
-            <ToastContainer/>
-        </div>
+        <>
+            <ProductComponent/>
+        </>
 
     )
 };

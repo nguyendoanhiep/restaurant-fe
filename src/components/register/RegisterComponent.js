@@ -30,8 +30,7 @@ const RegisterComponent = () => {
         <Form
             name="registerForm"
             onFinish={onSubmit}
-            className="register-form"
-            style={{maxWidth: '400px', margin: '0 auto' , zIndex: '2' }}
+            className="form"
         >
             <h2>Register</h2>
 
@@ -119,7 +118,6 @@ const RegisterComponent = () => {
                 >
                     Register
                 </Button>
-                <ToastContainer/>
             </Form.Item>
         </Form>
 
