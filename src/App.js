@@ -12,7 +12,7 @@ const App = () => {
     const pathname = location.pathname
     const [checkForm, setCheckForm] = useState(false);
     useEffect(() => {
-        if (pathname === '/login' || pathname === '/register') {
+        if (pathname === '/product' || pathname === '/post') {
             setCheckForm(true)
         }else {
             setCheckForm(false)
@@ -22,7 +22,7 @@ const App = () => {
         <div className="custom-body">
             <HeaderComponent/>
             <div className="custom-body-app">
-                {!checkForm && <SearchComponent/>}
+                {checkForm && <SearchComponent/>}
                 <Router/>
             </div>
             <FooterComponent/>

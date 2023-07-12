@@ -1,9 +1,9 @@
-import {Button, Dropdown, Input, Menu, Slider} from 'antd'
+import {Breadcrumb, Button, Dropdown, Input, Menu, Slider} from 'antd'
 import {useDispatch} from 'react-redux';
 
 const {Search} = Input;
 import '../../App.css'
-import {useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import {getAllProduct} from "../../redux/thunk/ProductThuck";
 
 import search from '../../redux/slice/ProductSlince'
@@ -15,7 +15,6 @@ const SearchComponent = () => {
     const [searchValue, setSearchValue] = useState('');
     useEffect(() => {
         dispatch(getAllProduct(1, 6, searchValue))
-        // console.log(productList)
     }, [searchValue])
 
     function getItem(label, key, icon, children, style) {
@@ -48,22 +47,23 @@ const SearchComponent = () => {
 
     const items = [
         getItem('Danh sách sản phẩm', '1', null, [
-            getItem('Đồ ăn cho mèo', '2', null, [
-                    getItem('Hạt cho mèo', '3'),
-                    getItem('Pate gói', '4'),
-                    getItem('Pate tươi', '11'),
-                    getItem('Súp thưởng', '5')
-                ]
-            ),
-            getItem('Cát mèo', '6', null, [
-                    getItem('Cát đất sét', '7',),
-                    getItem('Cát đậu nành', '8',)
-                ]
-            ),
-            getItem('Đồ chơi ', '9',),
-            getItem('Phụ kiện', '10',)
+                getItem('Đồ ăn cho mèo', '2', null, [
+                        getItem('Hạt cho mèo', '3'),
+                        getItem('Pate gói', '4'),
+                        getItem('Pate tươi', '11'),
+                        getItem('Súp thưởng', '5')
+                    ]
+                ),
+                getItem('Cát mèo', '6', null, [
+                        getItem('Cát đất sét', '7',),
+                        getItem('Cát đậu nành', '8',)
+                    ]
+                ),
+                getItem('Đồ chơi ', '9',),
+                getItem('Phụ kiện', '10',)
 
-        ])
+            ]),
+        getItem('Cẩm nang nuôi mèo', '12')
     ]
 
     const onSearch = (value) => {
