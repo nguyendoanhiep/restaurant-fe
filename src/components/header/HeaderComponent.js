@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
-import {Layout, Menu, Image, Button, Dropdown, Breadcrumb} from 'antd';
 import {NavLink, useNavigate} from 'react-router-dom';
 import {useDispatch} from 'react-redux';
 import {logout} from '../../redux/slice/LoginSlince';
-import {MenuFoldOutlined, MenuUnfoldOutlined, ShoppingCartOutlined, UserOutlined} from '@ant-design/icons';
-import myTomCatImage from '../../env/img/My-tom-cat.png';
+import logo from '../../env/img/logo.png';
+import 'bootstrap-4-react';
 import {toast} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-const { Header } = Layout;
+import Image from "react-bootstrap/Image";
+import '../../App.css';
+import {Nav} from "bootstrap-4-react/lib/components";
 
 const HeaderComponent = () => {
     const dispatch = useDispatch();
@@ -29,103 +30,63 @@ const HeaderComponent = () => {
         });
         navigate('/');
     };
-    const items = [
+    const itemsLeft = [
         {key: '1', label: 'Trang chủ', to: '/'},
         {key: '2', label: 'Sản phẩm', to: '/product'},
-        {key: '3', label: 'Bài viết', to: '/post'},
-        {key: '4', label: 'Khuyến mãi', to: '/sales'},
+        {key: '3', label: 'Khuyến mãi', to: '/promotion'},
+        {key: '4', label: 'Bài viết', to: '/post'},
+    ]
+    const itemsRight = [
         {key: '5', label: 'Liên hệ', to: '/contact'},
         {key: '6', label: 'Về chúng tôi', to: '/about'},
+        {key: '7', label: 'Đăng Ký', to: '/register', style: 'red'},
+        {key: '8', label: 'Đăng nhập', to: '/login', style: 'red'},
     ]
 
-    const listBeforeLogin = [
-        {key: '7', label: 'Đăng ký', to: '/register'},
-        {key: '8', label: 'Đăng nhập', to: '/login'},
-    ];
-
-    const listAfterLogin = [
-        {key: '7', label: 'Thông tin cá nhân', to: '/profile'},
-        {key: '8', label: 'Đăng xuất', danger: true, onClick: handleLogout},
-    ];
-    const toggleMenu = () => {
-        setMenu(!menu);
-    };
-    const onHandleMenu = (e) => {
-        const selectedMenuItem = items.find((item) => item.key === e.key);
-        navigate(selectedMenuItem.to);
-        // setMenu(!menu);
-    };
-    const onHandleList = (e) => {
-        const selectedMenuItem = list.find((item) => item.key === e.key);
-        navigate(selectedMenuItem.to);
-    };
     useEffect(() => {
-        setList(isLoggedIn ? listAfterLogin : listBeforeLogin);
 
-    }, [isLoggedIn]);
+    }, []);
 
     return (
-        <div>
-            <Header className="custom-header">
-                <div style={{width: '20%', display: 'flex', alignContent: 'center'}}>
-                    <Button onClick={toggleMenu}>
-                        {menu ? <MenuUnfoldOutlined/> : <MenuFoldOutlined/>}
-                    </Button>
-                    {menu && <Menu
-                        onClick={onHandleMenu}
-                        mode="inline"
-                        theme="light"
-                        inlineCollapsed={!menu}
-                        items={items}
-                        className="menu-layout"/>
-                    }
+        <div id="navbar-header" className="navbar navbar-expand-lg">
+            <div className="container">
+                <div className="navbar-brand navbar-brand-center d-flex align-items-center p-0 only-mobile">
+                    <Image src={logo} href="/"/>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'center', width: '60%'}}>
-                    <NavLink to="/">
-                        <Image style={{borderRadius: '10%'}} width={100} height={100} src={myTomCatImage}
-                               preview={false}/>
-                    </NavLink>
+                <button className="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="lnr lnr-menu"/>
+                </button>
+                <div className="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                    <Nav className="navbar-nav d-flex justify-content-between">
+                        <div/>
+                        <div className="d-flex flex-lg-row flex-column">
+                            {itemsLeft.map((item) => (
+                                <Nav.Item key={item.key}>
+                                    <Nav.Link as={NavLink} href={item.to}>
+                                        {item.label}
+                                    </Nav.Link>
+                                </Nav.Item>
+                            ))}
+                        </div>
+                    </Nav>
+                    <Nav.Link className="navbar-brand navbar-brand-center d-flex align-items-center only-desktop"
+                              href="/">
+                        <Image src={logo} width={117} height={50}/>
+                    </Nav.Link>
+                    <Nav className="navbar-nav d-flex justify-content-between">
+                        <div className="d-flex flex-lg-row flex-column">
+                            {itemsRight.map((item) => (
+                                <Nav.Item key={item.key}>
+                                    <Nav.Link as={NavLink} href={item.to} style={{color: item.style}}>
+                                        {item.label}
+                                    </Nav.Link>
+                                </Nav.Item>
+                            ))}
+                        </div>
+                    </Nav>
                 </div>
-                <div style={{display: 'flex', justifyContent: 'right', width: '20%'}}>
-                    <Button style={{border: 'none'}}>
-                        <ShoppingCartOutlined style={{fontSize: '20px', alignSelf: 'center'}}/>
-                    </Button>
-                    <Dropdown
-                        menu={{
-                            items: list,
-                            selectable: true,
-                            onClick: onHandleList,
-                        }}
-                        style={{alignSelf: 'center'}}
-                    >
-                        <UserOutlined style={{fontSize: '20px', alignSelf: 'center'}}/>
-                    </Dropdown>
-                </div>
-            </Header>
-            <div style={{margin: '20px 0 50px 0', width: '100%'}}>
-                <Menu
-                    style={{
-                        fontSize: '18px',
-                        display: 'flex',
-                        justifyContent: 'right',
-                    }}
-                    onClick={onHandleMenu}
-                    mode="horizontal"
-                    defaultSelectedKeys={['1']}
-                    theme="light"
-                    items={items.map((value, index) => {
-                        return {
-                            key: index + 1,
-                            label: value.label,
-                            style: {
-                                width: '13%',
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                            },
-                        };
-                    })}
-                ></Menu>
             </div>
         </div>
     );

@@ -4,11 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="758a96ff-beac-4a4f-a842-6f9a881c39f1" name="Default Changelist" comment="">
+    <list default="true" id="758a96ff-beac-4a4f-a842-6f9a881c39f1" name="Default Changelist" comment="ok">
+      <change afterPath="$PROJECT_DIR$/src/components/about/AboutComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/product/details-product/DetailsProductComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/promotion/PromotionComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/breakfast-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/chef-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/chef-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/chef-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/hero-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/hero-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/hero-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/reservation-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/rooftop-skyline.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/salmon-zucchini.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/steak.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/env/img/testi-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tom-cat-house-fe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tom-cat-house-fe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/SearchComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search/SearchComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/LoginComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/product/ProductComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product/ProductComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/register/RegisterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register/RegisterComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/router/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/router/Router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search/SearchComponent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/env/img/My-tom-cat.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,27 +61,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/HiepND/IdeaProjects/tom-cat-house-fe",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.1.3\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/env/img" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="D:\MKG\app\JetBrains\IntelliJ IDEA 2021.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MKG\personal-project\my-tom-cat-fe\src\env\img" />
+      <recent name="D:\MKG\personal-project\my-tom-cat-fe\src\env" />
       <recent name="C:\Users\HiepND\IdeaProjects\tom-cat-house-fe\src\env\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HiepND\IdeaProjects\tom-cat-house-fe\src\components" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -95,7 +132,30 @@
       <workItem from="1688347364766" duration="26345000" />
       <workItem from="1688605511575" duration="8136000" />
       <workItem from="1688622510502" duration="2497000" />
+      <workItem from="1688951012876" duration="27907000" />
+      <workItem from="1689152124765" duration="913000" />
+      <workItem from="1689210982632" duration="533000" />
+      <workItem from="1689223083551" duration="813000" />
+      <workItem from="1689297144296" duration="64000" />
+      <workItem from="1689322029859" duration="191000" />
+      <workItem from="1689557012328" duration="656000" />
+      <workItem from="1689642107440" duration="612000" />
+      <workItem from="1689646372181" duration="8000" />
+      <workItem from="1689737432155" duration="675000" />
+      <workItem from="1689749305949" duration="407000" />
+      <workItem from="1689901306172" duration="634000" />
+      <workItem from="1690179005029" duration="17000" />
+      <workItem from="1694658632522" duration="24954000" />
     </task>
+    <task id="LOCAL-00001" summary="ok">
+      <option name="closed" value="true" />
+      <created>1689152392929</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689152392929</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,11 +166,53 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
