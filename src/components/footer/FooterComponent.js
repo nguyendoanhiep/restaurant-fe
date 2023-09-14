@@ -1,7 +1,6 @@
 import React from "react";
 import logo from '../../env/img/logo.png';
 import Image from "react-bootstrap/Image";
-import '@fortawesome/fontawesome-svg-core';
 import {Nav} from "bootstrap-4-react/lib/components";
 const FooterComponent = () => {
     return (

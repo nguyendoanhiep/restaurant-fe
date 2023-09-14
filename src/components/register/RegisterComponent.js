@@ -28,89 +28,91 @@ const RegisterComponent = () => {
         });
     };
     return (
-        <div id="gtco-reservation" className="bg-fixed bg-white section-padding overlay"
-             style={{backgroundImage: `url(${rooftop})`}}>
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-5">
-                        <div className="section-content bg-white p-5 shadow">
-                            <div className="heading-section text-center">
+        <div style={{maxWidth: 1500}} className="container">
+            <div id="gtco-reservation" className="bg-fixed bg-white section-padding overlay"
+                 style={{backgroundImage: `url(${rooftop})`, maxHeight: 600, maxWidth: 1500}}>
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-5">
+                            <div className="section-content bg-white p-5 shadow">
+                                <div className="heading-section text-center">
                         <span className="subheading">
                             Register
                         </span>
-                                <Form
-                                    name="loginForm"
-                                    onFinish={onSubmit}
-                                    className="form"
-                                >
-                                    <Form.Item
-                                        name="username"
-                                        rules={[
-                                            {required: true, message: 'Please input your username!'},
-                                        ]}
+                                    <Form
+                                        name="loginForm"
+                                        onFinish={onSubmit}
+                                        className="form"
                                     >
-                                        <Input
-                                            style={{height: '35px'}}
-                                            prefix={<UserOutlined className="site-form-item-icon"/>}
-                                            placeholder="Username"
-                                        />
-                                    </Form.Item>
+                                        <Form.Item
+                                            name="username"
+                                            rules={[
+                                                {required: true, message: 'Please input your username!'},
+                                            ]}
+                                        >
+                                            <Input
+                                                style={{height: '35px'}}
+                                                prefix={<UserOutlined className="site-form-item-icon"/>}
+                                                placeholder="Username"
+                                            />
+                                        </Form.Item>
 
-                                    <Form.Item
-                                        name="password"
-                                        rules={[
-                                            {required: true, message: 'Please input your password!'},
-                                        ]}
-                                    >
-                                        <Input.Password
-                                            style={{height: '35px'}}
-                                            prefix={<LockOutlined className="site-form-item-icon"/>}
-                                            placeholder="Password"
-                                        />
-                                    </Form.Item>
+                                        <Form.Item
+                                            name="password"
+                                            rules={[
+                                                {required: true, message: 'Please input your password!'},
+                                            ]}
+                                        >
+                                            <Input.Password
+                                                style={{height: '35px'}}
+                                                prefix={<LockOutlined className="site-form-item-icon"/>}
+                                                placeholder="Password"
+                                            />
+                                        </Form.Item>
 
-                                    <Form.Item
-                                        name="confirmPassword"
-                                        dependencies={['password']}
-                                        hasFeedback
-                                        rules={[
-                                            {required: true, message: 'Please confirm your password!'},
-                                            ({getFieldValue}) => ({
-                                                validator(_, value) {
-                                                    if (!value || getFieldValue('password') === value) {
-                                                        return Promise.resolve();
-                                                    }
-                                                    return Promise.reject('Mật khẩu và xác nhận mật khẩu không khớp!');
-                                                },
-                                            }),
-                                        ]}
-                                    >
-                                        <Input.Password
-                                            style={{height: '35px'}}
-                                            prefix={<LockOutlined className="site-form-item-icon"/>}
-                                            placeholder="Confirm Password"
-                                        />
-                                    </Form.Item>
-                                    <Form.Item
-                                        name="Number Phone"
-                                        rules={[
-                                            {required: true, message: 'Please input your Number Phone!'},
-                                        ]}
-                                    >
-                                        <Input
-                                            style={{height: '35px'}}
-                                            prefix={<PhoneOutlined className="site-form-item-icon"/>}
-                                            placeholder="Number Phone"
-                                        />
-                                    </Form.Item>
-                                    <Form.Item>
-                                        <Button type="primary" htmlType="submit" className="login-form-button"
-                                                style={{width: '80px', height: '40px'}}
-                                                danger>
-                                            Register
-                                        </Button>
-                                    </Form.Item>
-                                </Form>
+                                        <Form.Item
+                                            name="confirmPassword"
+                                            dependencies={['password']}
+                                            hasFeedback
+                                            rules={[
+                                                {required: true, message: 'Please confirm your password!'},
+                                                ({getFieldValue}) => ({
+                                                    validator(_, value) {
+                                                        if (!value || getFieldValue('password') === value) {
+                                                            return Promise.resolve();
+                                                        }
+                                                        return Promise.reject('Mật khẩu và xác nhận mật khẩu không khớp!');
+                                                    },
+                                                }),
+                                            ]}
+                                        >
+                                            <Input.Password
+                                                style={{height: '35px'}}
+                                                prefix={<LockOutlined className="site-form-item-icon"/>}
+                                                placeholder="Confirm Password"
+                                            />
+                                        </Form.Item>
+                                        <Form.Item
+                                            name="Number Phone"
+                                            rules={[
+                                                {required: true, message: 'Please input your Number Phone!'},
+                                            ]}
+                                        >
+                                            <Input
+                                                style={{height: '35px'}}
+                                                prefix={<PhoneOutlined className="site-form-item-icon"/>}
+                                                placeholder="Number Phone"
+                                            />
+                                        </Form.Item>
+                                        <Form.Item>
+                                            <Button type="primary" htmlType="submit" className="login-form-button"
+                                                    style={{width: '80px', height: '40px'}}
+                                                    danger>
+                                                Register
+                                            </Button>
+                                        </Form.Item>
+                                    </Form>
+                                </div>
                             </div>
                         </div>
                     </div>

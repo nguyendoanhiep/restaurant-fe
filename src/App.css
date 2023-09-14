@@ -136,7 +136,7 @@ a:hover {
 @media (min-width: 992px) {
     .hero {
         margin-top: 50px;
-        height: calc(100vh - 130px); } }
+        } }
 
 .hero-info {
     padding-top: 60px; }

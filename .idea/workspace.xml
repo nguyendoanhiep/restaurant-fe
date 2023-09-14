@@ -5,38 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="758a96ff-beac-4a4f-a842-6f9a881c39f1" name="Default Changelist" comment="ok">
-      <change afterPath="$PROJECT_DIR$/src/components/about/AboutComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/product/details-product/DetailsProductComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/promotion/PromotionComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/breakfast-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/chef-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/chef-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/chef-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/hero-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/hero-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/hero-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/reservation-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/rooftop-skyline.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/salmon-zucchini.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/steak.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/env/img/testi-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/tom-cat-house-fe.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tom-cat-house-fe.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/FooterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/FooterComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/HeaderComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/HomeComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/HomeComponent.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/login/LoginComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/LoginComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/product/ProductComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/product/ProductComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/register/RegisterComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/register/RegisterComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/router/Router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/router/Router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/search/SearchComponent.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/env/img/My-tom-cat.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,9 +37,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/env/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\MKG\app\JetBrains\IntelliJ IDEA 2021.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -146,6 +123,8 @@
       <workItem from="1689901306172" duration="634000" />
       <workItem from="1690179005029" duration="17000" />
       <workItem from="1694658632522" duration="24954000" />
+      <workItem from="1694705445725" duration="160000" />
+      <workItem from="1694705734780" duration="1845000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <option name="closed" value="true" />
