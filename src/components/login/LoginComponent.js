@@ -1,7 +1,7 @@
 import React from 'react';
 import {Form, Input, Button} from 'antd';
 import {UserOutlined, LockOutlined, PhoneOutlined} from '@ant-design/icons';
-import {registerUser} from "../../redux/thunk/UserThunk";
+import {loginUser} from "../../redux/thunk/UserThunk";
 import {useNavigate} from 'react-router-dom';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,16 +12,14 @@ import rooftop from "../../env/img/reservation-bg.jpg";
 const LoginComponent = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const [roles, setRoles] = useState(['user']);
     const onSubmit = (values) => {
-        dispatch(registerUser(values.username, values.password, values.numberPhone, values.fullName, roles)).then(res => {
+        dispatch(loginUser(values.username, values.password)).then(res => {
             console.log(res)
             if (res.code === 200) {
-                sessionStorage.setItem('isRegister', 'true');
-                navigate('/login')
+                sessionStorage.setItem('isLoggedIn', 'true');
+                navigate('/')
             } else {
-                // Đăng nhập không thành công
-                toast.error('Đăng Ký không thành công!', {
+                toast.error('Đăng Nhập không thành công!', {
                     className: 'my-toast',
                 });
             }

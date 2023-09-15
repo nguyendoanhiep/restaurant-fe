@@ -12,9 +12,9 @@ import rooftop from "../../env/img/rooftop-skyline.jpg";
 const RegisterComponent = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const [roles, setRoles] = useState(['user']);
+    const [roles, setRoles] = useState(['ROLE_USER']);
     const onSubmit = (values) => {
-        dispatch(registerUser(values.username, values.password, values.numberPhone, values.fullName, roles)).then(res => {
+        dispatch(registerUser(values.username, values.password, values.numberPhone, roles)).then(res => {
             console.log(res)
             if (res.code === 200) {
                 sessionStorage.setItem('isRegister', 'true');

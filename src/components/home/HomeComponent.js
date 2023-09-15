@@ -7,7 +7,6 @@ import Image from "react-bootstrap/Image";
 
 const HomeComponent = () => {
     const isLoggedIn = sessionStorage.getItem('isLoggedIn') === 'true';
-    sessionStorage.removeItem('isLoggedIn');
     useEffect(() => {
         if (isLoggedIn) {
             toast.success('Đăng nhập thành công!', {
@@ -21,6 +20,7 @@ const HomeComponent = () => {
                 className: 'my-toast',
             });
         }
+        sessionStorage.removeItem('isLoggedIn');
     }, [])
     return (
         <div className="hero">

@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {NavLink, useNavigate} from 'react-router-dom';
 import {useDispatch} from 'react-redux';
-import {logout} from '../../redux/slice/LoginSlince';
+import {logout} from '../../redux/slice/UserSlince';
 import logo from '../../env/img/logo.png';
 import 'bootstrap-4-react';
 import {toast} from "react-toastify";
